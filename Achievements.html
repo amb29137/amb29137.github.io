@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+				<!--Tabs Code-->
+<div class="tab">
+	<button class="tablinks" onclick="openCity(event, 'Home')">
+		<img src="http://images.clipartpanda.com/home-clip-art-KTnqkGjTq.png"></button>
+	<button class="tablinks" onclick="openCity(event, 'Who Am I?')">Who Am I?</button>
+	<button class="tablinks" onclick="openCity(event, 'Achievements')">Achievements</button>
+	<button class="tablinks" onclick="openCity(event, 'Goals')">Goals</button>
+	<button class="tablinks" onclick="openCity(event, 'Travel')">Travel</button>
+</div>
+<div class="tab active">
+		<h1 style="text-align:center"> <font color="white">Browning's Blog</font></h1>
+	</div>
+	
+<div id="Home" class="tabcontent">
+		<h3 style="text-align:center">Welcome to Alex Browning's Blog</h3>
+		<p>Throughout this webpage you will see a showcase of my computer science knowledge as well as recieving an added bonus of learning about who I am outside of the classroom!</p>
+	</div>
+
+<div id="Who Am I?" class="tabcontent">
+		<h3 style="text-align:center">Who Am I?</h3>
+		<p>I am a freshman at UGA who is currently on the brink of losing hope and dropping out of college.  But, on the bright side I have a nice stack of student loans to show for it.  I guess that's what I get for being the lazy boy I was all the past year.  In reality I am probably not much different that you, whoever you are. I eat, I sleep, and I breathe just like you do.  I feel pain and I know dissapointment.  These day's its been one after another and I feel like Alice falling down the rabbit hole.</p>
+	</div>
+
+<div id="Achievements" class="tabcontent">
+		<h3 style="text-align:center">Achievements</h3>
+		<p>I got an A once.</p>
+		<p>In all seriousness I was Drum Captain of the Marching Band in highschool, I was a member of the UGA Rowing Team, and I currently work 20 to 30 hours a week at the Jittery Joe's MLC.  And yes that is an accomplishment because I still manage to get my stuff done and make it to this class.</p>
+	</div>
+
+<div id="Goals" class="tabcontent">
+		<h3 style="text-align:center">Goals</h3>
+		<p>If Im being honest this whole thing is an attempt for me to beg you to give me an A in the class.  I need all the help I can get in this long treck to gaining H.O.P.E. back.</p>
+	</div>
+
+<div id="Travel" class="tabcontent">
+		<h3 style="text-align:center">Travel</h3>
+		<p> Im going to Disney World the week after finals so that has to count for something?  Im also taking my girlfriend on a super date which will consist of attending the High Museum of Art, the renound restaurant Cafe Intermezzo, be in the presence of Sutton Foster at the Fox theater, play a round of laser tag and end the night at the hotel room I have booked for the two of us.</p>
+	</div>
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+					<!--End Tab Code-->
+					
+					<!--Main Page-->
+</html>
